@@ -11,6 +11,4 @@ COPY templates/server.conf.ctmpl /router/templates
 COPY start-nginx-router.sh /router
 RUN mv start-nginx-router.sh /bin/start-nginx-router
 
-# expose http port
-EXPOSE 80:80
 CMD ["/bin/containerpilot"]
